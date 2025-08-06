@@ -208,7 +208,7 @@ export default function HomePage() {
                       <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                     ))}
                   </div>
-                  <p className="text-gray-700 mb-4 italic">"{testimonial.comment}"</p>
+                  <p className="text-gray-700 mb-4 italic">&quot;{testimonial.comment}&quot;</p>
                   <div>
                     <p className="font-semibold">{testimonial.name}</p>
                     <p className="text-sm text-gray-500">{testimonial.location}</p>

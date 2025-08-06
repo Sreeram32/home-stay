@@ -102,7 +102,7 @@ export default function AccommodationsPage() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Farm Stay Accommodations</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Experience authentic farm life in our comfortable accommodations. Wake up to fresh air, farm sounds, and the
-            most beautiful sunrises you've ever seen.
+                          most beautiful sunrises you&apos;ve ever seen.
           </p>
         </div>
 
@@ -200,7 +200,7 @@ export default function AccommodationsPage() {
           <div className="text-center">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready to Book Your Stay?</h2>
             <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-              Contact us directly to check availability and make your reservation. We're happy to help you plan the
+              Contact us directly to check availability and make your reservation. We&apos;re happy to help you plan the
               perfect farm getaway.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

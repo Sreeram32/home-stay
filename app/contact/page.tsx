@@ -77,8 +77,8 @@ export default function ContactPage() {
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We'd love to hear from you! Whether you have questions about our products, want to book a stay, or schedule
-            a farm tour, we're here to help.
+            We&apos;d love to hear from you! Whether you have questions about our products, want to book a stay, or schedule
+            a farm tour, we&apos;re here to help.
           </p>
         </div>
 

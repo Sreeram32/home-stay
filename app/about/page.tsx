@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -121,9 +120,9 @@ export default function AboutPage() {
               All the land is consolidated.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              It is particularly noteworthy that water from others' land does not come into our land. All land is fenced. 
-              The residential house is roughly in the middle of the land. The land use plan has been made keeping in mind 
-              the sun's movement throughout the year and local weather conditions.
+                          It is particularly noteworthy that water from others&apos; land does not come into our land. All land is fenced. 
+            The residential house is roughly in the middle of the land. The land use plan has been made keeping in mind 
+            the sun&apos;s movement throughout the year and local weather conditions.
             </p>
             <p className="text-lg text-gray-700 mb-6">
               For this reason, a garden is planted in the north, and seasonal crops are cultivated in the south and east. 
