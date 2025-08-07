@@ -75,7 +75,7 @@ export default function AboutPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Leaf className="h-8 w-8 text-green-600" />
-              <span className="text-xl font-bold text-gray-900">GreenVale Farm</span>
+              <span className="text-xl font-bold text-gray-900">Sakria Farm and HomeStay</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-700 hover:text-green-600">
@@ -293,7 +293,7 @@ export default function AboutPage() {
         <div className="text-center bg-gray-50 rounded-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Experience Our Farm</h2>
           <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
-            We invite you to visit GreenVale Farm and experience sustainable agriculture firsthand. Whether you stay
+            We invite you to visit Sakria Farm and HomeStay and experience sustainable agriculture firsthand. Whether you stay
             with us, take a tour, or shop our products, you become part of our mission to create a more sustainable
             future.
           </p>

@@ -62,7 +62,7 @@ export default function AccommodationsPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Leaf className="h-8 w-8 text-green-600" />
-              <span className="text-xl font-bold text-gray-900">GreenVale Farm</span>
+              <span className="text-xl font-bold text-gray-900">Sakria Farm and HomeStay</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-700 hover:text-green-600">

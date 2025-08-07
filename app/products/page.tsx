@@ -1,11 +1,16 @@
+'use client';
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Leaf, ArrowLeft, ShoppingCart } from "lucide-react"
+import { Leaf, ArrowLeft, ShoppingCart, Plus, Minus } from "lucide-react"
+import { useCart } from "@/contexts/CartContext"
 
 export default function ProductsPage() {
+  const { cart, addItem, removeItem, updateQuantity, isInCart, getItemQuantity } = useCart();
+  
   const products = [
     {
       id: 1,
@@ -79,7 +84,7 @@ export default function ProductsPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Leaf className="h-8 w-8 text-green-600" />
-              <span className="text-xl font-bold text-gray-900">GreenVale Farm</span>
+              <span className="text-xl font-bold text-gray-900">Sakria Farm and HomeStay</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-700 hover:text-green-600">
@@ -98,10 +103,14 @@ export default function ProductsPage() {
                 Contact
               </Link>
             </div>
-            <Button className="bg-green-600 hover:bg-green-700">
-              <ShoppingCart className="h-4 w-4 mr-2" />
-              Cart (0)
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Link href="/cart">
+                <Button className="bg-green-600 hover:bg-green-700">
+                  <ShoppingCart className="h-4 w-4 mr-2" />
+                  Cart ({cart.itemCount})
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
@@ -164,9 +173,54 @@ export default function ProductsPage() {
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-green-600">{product.price}</span>
-                  <Button size="sm" className="bg-green-600 hover:bg-green-700" disabled={!product.inStock}>
-                    {product.inStock ? "Add to Cart" : "Out of Stock"}
-                  </Button>
+                  {product.inStock ? (
+                    <div className="flex items-center space-x-2">
+                      {isInCart(product.id) ? (
+                        <div className="flex items-center space-x-1">
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() => updateQuantity(product.id, getItemQuantity(product.id) - 1)}
+                            className="h-8 w-8 p-0"
+                          >
+                            <Minus className="h-4 w-4" />
+                          </Button>
+                          <span className="text-sm font-medium w-8 text-center">
+                            {getItemQuantity(product.id)}
+                          </span>
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() => updateQuantity(product.id, getItemQuantity(product.id) + 1)}
+                            className="h-8 w-8 p-0"
+                          >
+                            <Plus className="h-4 w-4" />
+                          </Button>
+                        </div>
+                      ) : (
+                        <Button
+                          size="sm"
+                          className="bg-green-600 hover:bg-green-700"
+                          onClick={() => addItem({
+                            id: product.id,
+                            name: product.name,
+                            price: parseInt(product.price.replace(/[^\d]/g, '')),
+                            image: product.image,
+                            description: product.description,
+                            category: product.category,
+                            organic: product.organic,
+                            inStock: product.inStock,
+                          })}
+                        >
+                          Add to Cart
+                        </Button>
+                      )}
+                    </div>
+                  ) : (
+                    <Button size="sm" className="bg-gray-400" disabled>
+                      Out of Stock
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

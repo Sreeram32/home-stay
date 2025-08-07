@@ -21,7 +21,7 @@ export default function ContactPage() {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      details: ["info@greenvalefarm.com", "bookings@greenvalefarm.com", "tours@greenvalefarm.com"],
+              details: ["info@sakriafarm.com", "bookings@sakriafarm.com", "tours@sakriafarm.com"],
     },
     {
       icon: <Clock className="h-6 w-6" />,
@@ -38,7 +38,7 @@ export default function ContactPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Leaf className="h-8 w-8 text-green-600" />
-              <span className="text-xl font-bold text-gray-900">GreenVale Farm</span>
+              <span className="text-xl font-bold text-gray-900">Sakria Farm and HomeStay</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-700 hover:text-green-600">

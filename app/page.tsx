@@ -115,9 +115,9 @@ export default function HomePage() {
       <section className="py-16 px-4 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Welcome to GreenVale Farm</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Welcome to Sakria Farm and HomeStay</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Nestled in the heart of the countryside, GreenVale Farm has been practicing sustainable agriculture for
+              Nestled in the heart of the countryside, Sakria Farm and HomeStay has been practicing sustainable agriculture for
               over three generations. We offer authentic farm experiences where guests can participate in daily farm
               activities, learn about organic farming, and enjoy fresh, locally-grown produce.
             </p>
@@ -240,7 +240,7 @@ export default function HomePage() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Leaf className="h-6 w-6 text-green-400" />
-                <span className="text-lg font-bold">GreenVale Farm</span>
+                <span className="text-lg font-bold">Sakria Farm and HomeStay</span>
               </div>
               <p className="text-gray-400">Sustainable farming and authentic rural experiences since 1952.</p>
             </div>
@@ -270,7 +270,7 @@ export default function HomePage() {
                 <li>123 Farm Road</li>
                 <li>Green Valley, CA 95945</li>
                 <li>Phone: (555) 123-4567</li>
-                <li>Email: info@greenvalefarm.com</li>
+                <li>Email: info@sakriafarm.com</li>
               </ul>
             </div>
             <div>
@@ -295,7 +295,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 GreenVale Farm. All rights reserved.</p>
+            <p>&copy; 2024 Sakria Farm and HomeStay. All rights reserved.</p>
           </div>
         </div>
       </footer>
